@@ -1,0 +1,93 @@
+digraph G {
+	label=<<B>Tree from main()</B>>;
+	fontcolor="#008000";
+	fontname="Arial";
+	labelloc="top";
+	labeljust="center";
+	fontsize=20;
+	rankdir=TB;
+	center=true;
+	nodesep=0.5;
+	ranksep=0.5;
+	node[fontsize=9, shape=box, width=0.7, height=0.4, style="filled, rounded", fontname="Arial"];
+
+	n0 [shape=record, label="{ptr = 0x604000001cd0 | parent = 0x0 | type = ARG_LINK | data = @ | {<left> left = 0x604000001c90 | <right> right = 0x604000001d50}}", fillcolor="#87CEEB", color="black"]
+	n1 [shape=record, label="{ptr = 0x604000001c90 | parent = 0x604000001cd0 | type = ARG_OP | data = razvod | {<left> left = 0x604000001690 | <right> right = 0x604000001d10}}", fillcolor="#87CEEB", color="black"]
+	n0:left -> n1
+	n2 [shape=record, label="{ptr = 0x604000001d50 | parent = 0x604000001cd0 | type = ARG_OP | data = $ | {<left> left = 0x604000001e10 | <right> right = 0x604000001e90}}", fillcolor="#87CEEB", color="black"]
+	n0:right -> n2
+	n3 [shape=record, label="{ptr = 0x604000001e10 | parent = 0x604000001d50 | type = ARG_OP | data = dodep | {<left> left = 0x604000001e50 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n2:left -> n3
+	n4 [shape=record, label="{ptr = 0x604000001e90 | parent = 0x604000001d50 | type = ARG_OP | data = $ | {<left> left = 0x604000002090 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n2:right -> n4
+	n5 [shape=record, label="{ptr = 0x604000002090 | parent = 0x604000001e90 | type = ARG_OP | data = dodep | {<left> left = 0x6040000020d0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n4:left -> n5
+	n6 [shape=record, label="{ptr = 0x6040000020d0 | parent = 0x604000002090 | type = ARG_OP | data = chetko | {<left> left = 0x604000001ed0 | <right> right = 0x604000002050}}", fillcolor="#87CEEB", color="black"]
+	n5:left -> n6
+	n7 [shape=record, label="{ptr = 0x604000001ed0 | parent = 0x6040000020d0 | type = ARG_VAR | data = freebet | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n6:left -> n7
+	n8 [shape=record, label="{ptr = 0x604000002050 | parent = 0x6040000020d0 | type = ARG_FUNC | data = slot_mashina | {<left> left = 0x604000002010 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n6:right -> n8
+	n9 [shape=record, label="{ptr = 0x604000002010 | parent = 0x604000002050 | type = ARG_OP | data = plus_esche | {<left> left = 0x604000001f90 | <right> right = 0x604000001fd0}}", fillcolor="#87CEEB", color="black"]
+	n8:left -> n9
+	n10 [shape=record, label="{ptr = 0x604000001f90 | parent = 0x604000002010 | type = ARG_OP | data = plus_esche | {<left> left = 0x604000001f10 | <right> right = 0x604000001f50}}", fillcolor="#87CEEB", color="black"]
+	n9:left -> n10
+	n11 [shape=record, label="{ptr = 0x604000001fd0 | parent = 0x604000002010 | type = ARG_NUM | data = 7 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n9:right -> n11
+	n12 [shape=record, label="{ptr = 0x604000001f10 | parent = 0x604000001f90 | type = ARG_NUM | data = 7 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n10:left -> n12
+	n13 [shape=record, label="{ptr = 0x604000001f50 | parent = 0x604000001f90 | type = ARG_NUM | data = 7 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n10:right -> n13
+	n14 [shape=record, label="{ptr = 0x604000001e50 | parent = 0x604000001e10 | type = ARG_OP | data = chetko | {<left> left = 0x604000001d90 | <right> right = 0x604000001dd0}}", fillcolor="#87CEEB", color="black"]
+	n3:left -> n14
+	n15 [shape=record, label="{ptr = 0x604000001d90 | parent = 0x604000001e50 | type = ARG_VAR | data = stavka | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n14:left -> n15
+	n16 [shape=record, label="{ptr = 0x604000001dd0 | parent = 0x604000001e50 | type = ARG_NUM | data = 10 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n14:right -> n16
+	n17 [shape=record, label="{ptr = 0x604000001690 | parent = 0x604000001c90 | type = ARG_FUNC | data = slot_mashina | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n1:left -> n17
+	n18 [shape=record, label="{ptr = 0x604000001d10 | parent = 0x604000001c90 | type = ARG_LINK | data = @ | {<left> left = 0x604000001790 | <right> right = 0x604000001ad0}}", fillcolor="#87CEEB", color="black"]
+	n1:right -> n18
+	n19 [shape=record, label="{ptr = 0x604000001790 | parent = 0x604000001d10 | type = ARG_VAR | data = stavka_3 | {<left> left = 0x604000001710 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n18:left -> n19
+	n20 [shape=record, label="{ptr = 0x604000001ad0 | parent = 0x604000001d10 | type = ARG_LINK | data = @ | {<left> left = 0x604000001810 | <right> right = 0x604000001b90}}", fillcolor="#87CEEB", color="black"]
+	n18:right -> n20
+	n21 [shape=record, label="{ptr = 0x604000001810 | parent = 0x604000001ad0 | type = ARG_OP | data = esli_zaletelo | {<left> left = 0x6040000018d0 | <right> right = 0x604000001a90}}", fillcolor="#87CEEB", color="black"]
+	n20:left -> n21
+	n22 [shape=record, label="{ptr = 0x604000001b90 | parent = 0x604000001ad0 | type = ARG_OP | data = $ | {<left> left = 0x604000001bd0 | <right> right = 0x604000001c50}}", fillcolor="#87CEEB", color="black"]
+	n20:right -> n22
+	n23 [shape=record, label="{ptr = 0x604000001bd0 | parent = 0x604000001b90 | type = ARG_OP | data = chetko | {<left> left = 0x604000001b10 | <right> right = 0x604000001b50}}", fillcolor="#87CEEB", color="black"]
+	n22:left -> n23
+	n24 [shape=record, label="{ptr = 0x604000001c50 | parent = 0x604000001b90 | type = ARG_OP | data = vivesti | {<left> left = 0x604000001c10 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n22:right -> n24
+	n25 [shape=record, label="{ptr = 0x604000001c10 | parent = 0x604000001c50 | type = ARG_VAR | data = stavka_2 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n24:left -> n25
+	n26 [shape=record, label="{ptr = 0x604000001b10 | parent = 0x604000001bd0 | type = ARG_VAR | data = stavka_1 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n23:left -> n26
+	n27 [shape=record, label="{ptr = 0x604000001b50 | parent = 0x604000001bd0 | type = ARG_NUM | data = 0 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n23:right -> n27
+	n28 [shape=record, label="{ptr = 0x6040000018d0 | parent = 0x604000001810 | type = ARG_OP | data = podcrutil | {<left> left = 0x604000001850 | <right> right = 0x604000001890}}", fillcolor="#87CEEB", color="black"]
+	n21:left -> n28
+	n29 [shape=record, label="{ptr = 0x604000001a90 | parent = 0x604000001810 | type = ARG_OP | data = esli_proebali | {<left> left = 0x604000001950 | <right> right = 0x604000001a10}}", fillcolor="#87CEEB", color="black"]
+	n21:right -> n29
+	n30 [shape=record, label="{ptr = 0x604000001950 | parent = 0x604000001a90 | type = ARG_OP | data = vivesti | {<left> left = 0x604000001910 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n29:left -> n30
+	n31 [shape=record, label="{ptr = 0x604000001a10 | parent = 0x604000001a90 | type = ARG_OP | data = $ | {<left> left = 0x604000001a50 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n29:right -> n31
+	n32 [shape=record, label="{ptr = 0x604000001a50 | parent = 0x604000001a10 | type = ARG_OP | data = chetko | {<left> left = 0x604000001990 | <right> right = 0x6040000019d0}}", fillcolor="#87CEEB", color="black"]
+	n31:left -> n32
+	n33 [shape=record, label="{ptr = 0x604000001990 | parent = 0x604000001a50 | type = ARG_VAR | data = stavka_3 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n32:left -> n33
+	n34 [shape=record, label="{ptr = 0x6040000019d0 | parent = 0x604000001a50 | type = ARG_NUM | data = 7 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n32:right -> n34
+	n35 [shape=record, label="{ptr = 0x604000001910 | parent = 0x604000001950 | type = ARG_NUM | data = 9 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n30:left -> n35
+	n36 [shape=record, label="{ptr = 0x604000001850 | parent = 0x6040000018d0 | type = ARG_VAR | data = stavka_1 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n28:left -> n36
+	n37 [shape=record, label="{ptr = 0x604000001890 | parent = 0x6040000018d0 | type = ARG_VAR | data = stavka_2 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n28:right -> n37
+	n38 [shape=record, label="{ptr = 0x604000001710 | parent = 0x604000001790 | type = ARG_VAR | data = stavka_2 | {<left> left = 0x6040000016d0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n19:left -> n38
+	n39 [shape=record, label="{ptr = 0x6040000016d0 | parent = 0x604000001710 | type = ARG_VAR | data = stavka_1 | {<left> left = 0x0 | <right> right = 0x0}}", fillcolor="#87CEEB", color="black"]
+	n38:left -> n39
+}

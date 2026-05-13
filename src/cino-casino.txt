@@ -1,0 +1,16 @@
+razvod slot_mashina stavka_otkrita stavka_1 plus_esche stavka_2 plus_esche stavka_3 stavka_zakrita
+vhod_v_igru
+    esli_zaletelo stavka_otkrita stavka_1 podcrutil stavka_2 stavka_zakrita
+    vhod_v_igru
+        vivesti 9 $
+    vihod_iz_igri
+    esli_proebali
+        vhod_v_igru
+            stavka_3 chetko 7 $
+        vihod_iz_igri
+    stavka_1 chetko 0 $
+    vivesti stavka_2 $
+vihod_iz_igri
+
+dodep stavka chetko 10$
+dodep freebet chetko slot_mashina stavka_otkrita 7 plus_esche 7 plus_esche 7 stavka_zakrita $

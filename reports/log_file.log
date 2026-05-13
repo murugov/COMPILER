@@ -1,0 +1,8 @@
+[2026-05-13 17:45:35] INFO  Lexer is initialized
+[2026-05-13 17:45:35] INFO  Hash table is initialized
+[2026-05-13 17:45:35] DEBUG global_scope[0x61d000000080]
+[2026-05-13 17:45:35] INFO  Parser is initialized
+[2026-05-13 17:45:35] INFO  Hash table is initialized
+[2026-05-13 17:45:36] INFO  Lexer is released
+[2026-05-13 17:45:36] INFO  Hash table is released
+[2026-05-13 17:45:36] INFO  Parser is released

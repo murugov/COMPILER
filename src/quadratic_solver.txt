@@ -1,0 +1,47 @@
+razvod kvadratnie_uravnenia stavka_otkrita a plus_esche b plus_esche c stavka_zakrita vhod_v_igru
+    D chetko stavka_otkrita b vo_bank 2 stavka_zakrita sniat_babki stavka_otkrita 4 umnogit_stavku a umnogit_stavku c stavka_zakrita$
+    
+    esli_zaletelo stavka_otkrita D podcrutil 0 stavka_zakrita vhod_v_igru
+        x chetko stavka_otkrita sniat_babki b stavka_zakrita delit_babki stavka_otkrita 2 umnogit_stavku a stavka_zakrita$
+        vivesti x
+    vihod_iz_igri esli_proebali vhod_v_igru
+        esli_zaletelo stavka_otkrita D zashli_v_plus 0 stavka_zakrita vhod_v_igru
+            // Two real roots
+            x1 chetko stavka_otkrita sniat_babki b dobavit_babki sqvrt stavka_otkrita D stavka_zakrita stavka_zakrita delit_babki stavka_otkrita 2 umnogit_stavku a stavka_zakrita$
+            x2 chetko stavka_otkrita sniat_babki b sniat_babki sqvrt stavka_otkrita D stavka_zakrita stavka_zakrita delit_babki stavka_otkrita 2 umnogit_stavku a stavka_zakrita$
+            vivesti x1$
+            vivesti x2$
+        vihod_iz_igri esli_proebali vhod_v_igru
+            // Complex roots
+            real_part chetko stavka_otkrita sniat_babki b stavka_zakrita delit_babki stavka_otkrita 2 umnogit_stavku a stavka_zakrita$
+            imag_part chetko sqvrt stavka_otkrita sniat_babki D stavka_zakrita delit_babki stavka_otkrita 2 umnogit_stavku a stavka_zakrita$
+            
+            vivesti real_part dobavit_babki " + " dobavit_babki imag_part dobavit_babki "i"$
+            vivesti real_part sniat_babki imag_part dobavit_babki "i"$
+        vihod_iz_igri
+    vihod_iz_igri
+vihod_iz_igri
+
+// Test the function
+dodep vhod_v_igru
+    // Test case 1: x^2 - 5x + 6 = 0
+    a1 chetko 1$
+    b1 chetko sniat_babki 5$
+    c1 chetko 6$
+    
+    kvadratnie_uravnenia stavka_otkrita a1 plus_esche b1 plus_esche c1 stavka_zakrita$
+    
+    // Test case 2: x^2 + 2x + 5 = 0 (complex roots)
+    a2 chetko 1$
+    b2 chetko 2$
+    c2 chetko 5$
+    
+    kvadratnie_uravnenia stavka_otkrita a2 plus_esche b2 plus_esche c2 stavka_zakrita$
+    
+    // Test case 3: x^2 - 4x + 4 = 0 (one root)
+    a3 chetko 1$
+    b3 chetko sniat_babki 4$
+    c3 chetko 4$
+    
+    kvadratnie_uravnenia stavka_otkrita a3 plus_esche b3 plus_esche c3 stavka_zakrita$
+vihod_iz_igri PIZDA
